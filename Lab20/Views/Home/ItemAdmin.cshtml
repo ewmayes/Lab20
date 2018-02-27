@@ -1,0 +1,33 @@
+﻿@model Lab20.Models.Item
+
+<br />
+<br />
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var I in ViewBag.ItemData)
+    {
+    <tr>
+        <td>
+            @I.Name
+        </td>
+        <td>
+            @I.Description
+        </td>
+        <td>
+            @I.Quantity
+        </td>
+        <td>
+            @I.Price
+        </td>
+        <td>
+            <a href="/Home/EditItemName=@ViewBag.ItemToBeUpdated.Name">Edit</a>
+        </td>
+    </tr>
+    }
+</table>

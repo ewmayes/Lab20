@@ -54,6 +54,28 @@ namespace Lab20.Controllers
             return View("AddUser");
         }
 
+        public ActionResult ItemAdmin()
+        {
+            CoffeeShopDBEntities1 MyORM = new CoffeeShopDBEntities1();
+            ViewBag.ItemData = MyORM.Items.ToList();
+            return View();
+        }
 
+        //public ActionResult UpdateItemByName(string Name)
+        //{
+        //    CoffeeShopDBEntities1 MyORM = new CoffeeShopDBEntities1();
+        //    Item ToBeUpdated = MyORM.Items.Find(Name);
+        //    ViewBag.ItemToBeUpdated = ToBeUpdated;
+        //    return View("ItemAdmin");
+        //}
+
+
+        //public ActionResult EditItem(string Item)
+        //{
+        //    CoffeeShopDBEntities1 MyORM = new CoffeeShopDBEntities1();
+        //    Item ToBeUpdated = MyORM.Items.Find(Item);
+        //    ViewBag.ToBeUpdated = ToBeUpdated;
+        //    return View("ItemAdmin");
+        //}
     }
 }

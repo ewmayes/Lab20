@@ -173,11 +173,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Lab20Model.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelLab20.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelLab20.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\User.cs">
       <DependentUpon>Lab20Model.tt</DependentUpon>
     </Compile>
@@ -200,10 +195,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Lab20Model.edmx</DependentUpon>
       <LastGenOutput>Lab20Model.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\ModelLab20.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelLab20.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -246,6 +237,7 @@
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\AddUser.cshtml" />
     <Content Include="Views\Home\NewRegister.cshtml" />
+    <Content Include="Views\Home\ItemAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
